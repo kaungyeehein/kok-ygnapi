@@ -1,0 +1,19 @@
+{
+  "name": "kok-ygnapi",
+  "version": "1.0.0",
+  "description": "FB Messenger Bot Testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaungyeehein/kok-ygnapi.git"
+  },
+  "author": "kaungyeehein@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaungyeehein/kok-ygnapi/issues"
+  },
+  "homepage": "https://github.com/kaungyeehein/kok-ygnapi#readme"
+}
