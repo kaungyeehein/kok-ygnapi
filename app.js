@@ -1,10 +1,14 @@
-app.get('/webhook', function(req, res) {
-  if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === "1234567890Kk") {
-    console.log("Validating webhook");
-    res.status(200).send(req.query['hub.challenge']);
-  } else {
-    console.error("Failed validation. Make sure the validation tokens match.");
-    res.sendStatus(403);
-  }
-});
+var http = require("http");
+
+http.createServer(function (request, response) {
+   // Send the HTTP header 
+   // HTTP Status: 200 : OK
+   // Content Type: text/plain
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+   // Send the response body as "Hello World"
+   response.end('Hello World\n');
+}).listen(8081);
+
+// Console will print the message
+console.log('Server running at http://127.0.0.1:8081/');
